@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select:none;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.titulo {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.pontuacao {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.textoPontuacao {
+  margin-bottom: 30px;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: repeat(6, 150px); /* Aumentando para 6 colunas */
+  gap: 20px;
+  max-width: 100%;
+}
+
+.card {
+  width: 150px;
+  height: 150px;
+  background-color: rgb(53, 1, 53);
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+
+.card.show img {
+  display: block;
+}
+
+.card:hover {
+  background-color: rgb(100, 100, 100);
+}
+
+footer {
+  position: fixed;
+  margin-top: 30px;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 70px;
+  width: 100vw;
+  background-color: rgb(154, 252, 9);
+  gap: 30px;
+  color: rgb(65, 3, 65);
+}
+
+footer > h1 {
+  color: rgb(75, 6, 75);
+}
+
+.imgFooter {
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+}
+
+.footerIMG {
+  height: 50px;
+  width: 50px;
+  border: none;
+  cursor: default;
+  margin: 0;
+  padding: 0;
+}
+.pokemonNome {
+  color: rgb(154, 252, 9);
+  margin: 20px;
+}
+.tentativas{
+  margin-top: 110px;
+}
+.btnReiniciar{
+  background-color: rgb(65, 3, 65);
+  width: 150px;
+  height: 60px;
+  border:none;
+  border-radius: 10px;
+}
+.btnReiniciar:hover{
+  cursor: pointer;
+  background-color:  #9afc09;
+  color: white;
+  
+
+}
